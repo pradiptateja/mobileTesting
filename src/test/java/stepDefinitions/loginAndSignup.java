@@ -99,8 +99,8 @@ public class loginAndSignup extends setUp {
         WebElement textSuccessSignup = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageLogin.getTextSuccessSignup()));
         textSuccessSignup.isDisplayed();
 
-        WebElement buttonSuccessOK = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageLogin.getButtonSuccessOK()));
-        buttonSuccessOK.click();
+        WebElement buttonOKSuccessSignup = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageLogin.getButtonOKSuccessSignup()));
+        buttonOKSuccessSignup.click();
     }
 
     @When("user taps on login section")
@@ -120,8 +120,8 @@ public class loginAndSignup extends setUp {
         WebElement textSuccessLogin = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageLogin.getTextSuccessLogin()));
         textSuccessLogin.isDisplayed();
 
-        WebElement buttonSuccessLogin = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageLogin.getButtonSuccessLogin()));
-        buttonSuccessLogin.click();
+        WebElement buttonOKSuccessLogin = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageLogin.getButtonOKSuccessLogin()));
+        buttonOKSuccessLogin.click();
     }
 
 }

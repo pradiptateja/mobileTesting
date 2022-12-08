@@ -55,9 +55,9 @@ public class pageLogin {
         return textSuccessSignup;
     }
 
-    By buttonSuccessOK = By.xpath("//android.widget.Button[@resource-id='android:id/button1']");
-    public By getButtonSuccessOK() {
-        return buttonSuccessOK;
+    By buttonOKSuccessSignup = By.xpath("//android.widget.Button[@resource-id='android:id/button1']");
+    public By getButtonOKSuccessSignup() {
+        return buttonOKSuccessSignup;
     }
 
     By buttonLogin = By.xpath("//android.view.ViewGroup[@content-desc=\"button-LOGIN\"]");
@@ -70,8 +70,8 @@ public class pageLogin {
         return textSuccessLogin;
     }
 
-    By buttonSuccessLogin = By.xpath("//android.widget.Button[@resource-id='android:id/button1']");
-    public By getButtonSuccessLogin() {
-        return buttonSuccessLogin;
+    By buttonOKSuccessLogin = By.xpath("//android.widget.Button[@resource-id='android:id/button1']");
+    public By getButtonOKSuccessLogin() {
+        return buttonOKSuccessLogin;
     }
 }
