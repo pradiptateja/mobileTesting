@@ -111,8 +111,9 @@ public class loginAndSignup extends setUp {
 
     @When("user taps on login button")
     public void user_taps_on_login_button() {
-        WebElement buttonLogin = wait.until(ExpectedConditions.presenceOfElementLocated(elementPageLogin.getButtonLogin()));
+        WebElement buttonLogin = driver.findElement(elementPageLogin.getScrollLogin());
         buttonLogin.click();
+
     }
 
     @Then("user is successfully logged in")

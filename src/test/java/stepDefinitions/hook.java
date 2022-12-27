@@ -19,12 +19,12 @@ public class hook extends setUp {
         desiredCapabilities.setCapability("platformName", "Android");
 
         //-------Virtual Devices--------
-        desiredCapabilities.setCapability("appium:deviceName", "MyAVD");
-        desiredCapabilities.setCapability("appium:udid", "emulator-5554");
+//        desiredCapabilities.setCapability("appium:deviceName", "MyAVD");
+//        desiredCapabilities.setCapability("appium:udid", "emulator-5554");
 
         //-------Redmi Devices--------
-//        desiredCapabilities.setCapability("appium:deviceName", "Redmi");
-//        desiredCapabilities.setCapability("appium:udid", "d37a9b7e7cf5");
+        desiredCapabilities.setCapability("appium:deviceName", "Redmi");
+        desiredCapabilities.setCapability("appium:udid", "d37a9b7e7cf5");
 
         URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
 

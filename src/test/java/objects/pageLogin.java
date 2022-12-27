@@ -30,7 +30,7 @@ public class pageLogin {
         return inputPasswordConfirm;
     }
 
-    By scrollSignup = MobileBy.AndroidUIAutomator("new UiScrollable (new UiSelector().scrollable(true)).scrollIntoView(descriptionContains(\"button-SIGN UP\"))");
+    By scrollSignup = MobileBy.AndroidUIAutomator("new UiScrollable (new UiSelector().scrollable(true)).scrollIntoView(description(\"button-SIGN UP\"))");
     public By getScrollSignup() {
         return scrollSignup;
     }
@@ -60,9 +60,9 @@ public class pageLogin {
         return buttonOKSuccessSignup;
     }
 
-    By buttonLogin = By.xpath("//android.view.ViewGroup[@content-desc=\"button-LOGIN\"]");
-    public By getButtonLogin() {
-        return buttonLogin;
+    By scrollLogin = MobileBy.AndroidUIAutomator("new UiScrollable (new UiSelector().scrollable(true)).scrollIntoView(description(\"button-LOGIN\"))");
+    public By getScrollLogin() {
+        return scrollLogin;
     }
 
     By textSuccessLogin = By.xpath("//android.widget.LinearLayout[@resource-id='android:id/title_template']");

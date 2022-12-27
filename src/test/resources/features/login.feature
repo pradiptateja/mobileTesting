@@ -7,7 +7,7 @@ Feature: Login Functionality
     And user taps on login button
     Then user is notified incorrect email message
 
-  Scenario: Ensure user failed signup with invalid password
+  Scenario: Ensure user failed login with invalid password
     Given user is at application homepage
     And user taps on login tab
     When user taps on login section
