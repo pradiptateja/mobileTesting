@@ -20,6 +20,11 @@ public class pageHome {
         return tabLogin;
     }
 
+    By tabDrag = By.xpath("//android.widget.Button[@content-desc=\"Drag\"]");
+    public By getTabDrag() {
+        return tabDrag;
+    }
+
     By picWebDriver = By.xpath("//android.widget.ImageView[@class='android.widget.ImageView'][1]");
 
     public By getPicWebDriver() {
